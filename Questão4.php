@@ -3,12 +3,14 @@
     <input type="submit">
 </form>
 <?php
-if(isset($_POST["n"])){
-    $n = $_POST["n"];
+$N = $_POST["N"];
 
+if ($N < 10) {
+    echo "Valor inválido";
+} else {
     $i = 10;
-    while($i <= $n){
-        echo $i . " ";
+    while ($i <= $N) {
+        echo $i . "<br>";
         $i++;
     }
 }
