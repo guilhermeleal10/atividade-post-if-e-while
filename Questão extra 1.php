@@ -1,16 +1,16 @@
 <form method="POST">
     Número: <input type="number" name="n">
-    <input type="submit">
+    <input type="submit" value="Enviar">
 </form>
+
 <?php
-$N = $_POST["N"];
-$i = 1;
-$contador = 0;
+if(isset($_POST["n"])){
 
-while ($i <= $N) {
-    $contador++;
-    $i++;
+    $n = $_POST["n"];
+
+    $quantidade = $n;
+
+    echo "Quantidade de números: $quantidade";
+
 }
-
-echo "Quantidade: " . $contador;
 ?>
