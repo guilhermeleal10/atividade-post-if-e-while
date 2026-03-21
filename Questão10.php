@@ -3,15 +3,13 @@
     <input type="submit">
 </form>
 <?php
-if(isset($_POST["n"])){
-    $n = $_POST["n"];
+$N = $_POST["N"];
 
-    if($n < 20){
-        echo "Baixo";
-    } elseif($n <= 50){
-        echo "Médio";
-    } else {
-        echo "Alto";
-    }
+if ($N < 30) {
+    echo "Baixo";
+} elseif ($N <= 70) {
+    echo "Médio";
+} else {
+    echo "Alto";
 }
 ?>
